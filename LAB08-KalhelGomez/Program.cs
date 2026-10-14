@@ -8,7 +8,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-                       ?? "Server=localhost;Port=3306;Database=linqexample;User=root;Password=tecsup;";
+                       ?? throw new InvalidOperationException(
+                           "Define la cadena de conexión 'DefaultConnection' en configuración local o mediante variables de entorno.");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
@@ -47,3 +48,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
