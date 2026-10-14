@@ -1,0 +1,13 @@
+﻿# .NET
+**/bin/
+**/obj/
+
+# IDE
+.idea/
+.vs/
+*.user
+*.suo
+
+# Local configuration and secrets
+**/appsettings.json
+**/appsettings.Development.json
