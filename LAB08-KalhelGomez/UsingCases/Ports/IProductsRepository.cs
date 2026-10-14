@@ -1,4 +1,4 @@
-﻿using LAB08_KalhelGomez.Models;
+using LAB08_KalhelGomez.Domain.Entities;
 
 namespace LAB08_KalhelGomez.UsingCases.Ports;
 

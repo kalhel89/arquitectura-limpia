@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+using LAB08_KalhelGomez.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace LAB08_KalhelGomez.Models;
+namespace LAB08_KalhelGomez.Infrastructure.Persistence;
 
 public partial class AppDbContext : DbContext
 {
@@ -92,4 +91,3 @@ public partial class AppDbContext : DbContext
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
-

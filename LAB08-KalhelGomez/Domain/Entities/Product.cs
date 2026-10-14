@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace LAB08_KalhelGomez.Models;
+namespace LAB08_KalhelGomez.Domain.Entities;
 
 public partial class Product
 {
